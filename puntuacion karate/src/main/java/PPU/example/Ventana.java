@@ -31,19 +31,13 @@ public class Ventana extends JDialog {
             }
         });
 
-        kumiteButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                kumites();
-            }});
-        kataButton.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                kataBace();
-            }});
+        kumiteButton.addActionListener(e -> kumites());
+        kataButton.addActionListener(e -> kataBace());
     }
 
     private void kataBace() {
-        //Kata katas=new Kata();
-        //katas.setVisible(true);
+        Kata katas=new Kata();
+        katas.setVisible(true);
     }
 
     private void kumites() {
